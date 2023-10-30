@@ -20,10 +20,7 @@ public class Exercise2 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Write the size you want the matrix to have: ");
-        int size = sc.nextInt();
-
-        int[] array = new int[size];
+        int[] array = new int[sizeArray(sc)];
 
         fillArray(array, 0, 9);
         System.out.println();
@@ -33,6 +30,12 @@ public class Exercise2 {
 
         int sumArray = sumArray(array);
         System.out.println("The sum of all the values in the array is: " + sumArray);
+    }
+
+    // Method to receive a size by the user
+    public static int sizeArray (Scanner sc) {
+        System.out.print("Write the size you want the matrix to have: ");
+        return sc.nextInt();
     }
 
     // Method to fill the array with random numbers from 0 to 9
