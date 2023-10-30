@@ -16,6 +16,4 @@ public class Exercise4 {
         int[] array = new int[Exercise2.sizeArray(sc)];
 
     }
-
-
 }
