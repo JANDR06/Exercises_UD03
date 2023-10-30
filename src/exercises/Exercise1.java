@@ -17,6 +17,7 @@ public class Exercise1 {
 
         fillMatrix(matrix, sc);
         System.out.println();
+
         showMatrix(matrix);
     }
 

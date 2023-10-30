@@ -27,9 +27,15 @@ public class Exercise2 {
 
         fillArray(array);
         System.out.println();
+
         showArray(array);
+        System.out.println();
+
+        int sumArray = sumArray(array);
+        System.out.println("The sum of all the values in the array is: " + sumArray);
     }
 
+    // Method to fill the array with random numbers from 0 to 9
     public static void fillArray(int[] matrix) {
 
         for (int i = 0; i < matrix.length; i++) {
@@ -38,7 +44,7 @@ public class Exercise2 {
 
     }
 
-    // Method to view the values of the matrix also showing its position
+    // Method to view the values of the array also showing its position
     public static void showArray(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
@@ -46,4 +52,17 @@ public class Exercise2 {
         }
 
     }
+
+    // Method to add the values of the array
+    public static int sumArray(int[] array) {
+        int sumArray = 0;
+
+        for (int element : array) {
+            sumArray += element;
+        }
+
+        return sumArray;
+    }
+
+    // Method to generate random numbers
 }
