@@ -25,7 +25,7 @@ public class Exercise2 {
 
         int[] array = new int[size];
 
-        fillArray(array);
+        fillArray(array, 0, 9);
         System.out.println();
 
         showArray(array);
@@ -36,33 +36,30 @@ public class Exercise2 {
     }
 
     // Method to fill the array with random numbers from 0 to 9
-    public static void fillArray(int[] matrix) {
-
+    public static void fillArray(int[] matrix, int lower, int upper) {
         for (int i = 0; i < matrix.length; i++) {
-            matrix[i] = (int) (Math.random() * 10);
+            matrix[i] = generateRandomNumber(lower, upper);
         }
-
     }
 
     // Method to view the values of the array also showing its position
     public static void showArray(int[] array) {
-
         for (int i = 0; i < array.length; i++) {
             System.out.println("POSITION: " + i + " VALUE: " + array[i]);
         }
-
     }
 
     // Method to add the values of the array
     public static int sumArray(int[] array) {
         int sumArray = 0;
-
         for (int element : array) {
             sumArray += element;
         }
-
         return sumArray;
     }
 
     // Method to generate random numbers
+    public static int generateRandomNumber (int lowerLimit, int upperLimit) {
+        return (int) (Math.random() * (upperLimit - lowerLimit + 1)) + lowerLimit;
+    }
 }

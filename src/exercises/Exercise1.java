@@ -23,20 +23,16 @@ public class Exercise1 {
 
     // Method that asks the user to fill out the matrix
     public static void fillMatrix(int[] matrix, Scanner sc) {
-
         for (int i = 0; i < matrix.length; i++) {
             System.out.print("Write an integer value for the position " + i + ": ");
             matrix[i] = sc.nextInt();
         }
-
     }
 
     // Method to view the values of the matrix also showing its position
     public static void showMatrix(int[] matrix) {
-
         for (int i = 0; i < matrix.length; i++) {
             System.out.println("POSITION: " + i + " VALUE: " + matrix[i]);
         }
-
     }
 }
