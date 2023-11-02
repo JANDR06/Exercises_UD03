@@ -19,6 +19,7 @@ public class Exercise4 {
 
     }
 
+    // Method that fills the array with prime numbers
     public static void fillArray(int[] matrix, int lower, int upper) {
         int primeNumber;
 
@@ -31,6 +32,7 @@ public class Exercise4 {
         }
     }
 
+    // Method that returns true if it is a prime number or false if it is not.
     public static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
@@ -50,6 +52,7 @@ public class Exercise4 {
         return true;
     }
 
+    // Method that returns the maximum value
     public static int maxValue(int[] array) {
         int maxValue = 0;
 

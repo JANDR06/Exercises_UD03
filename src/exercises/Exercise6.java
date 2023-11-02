@@ -19,6 +19,7 @@ public class Exercise6 {
         System.out.println("The letter that corresponds to the DNI is " + letters[position]);
     }
 
+    // Method that returns the position of the array to which the indicated number corresponds
     public static int returnPosition(Scanner sc) {
         int dni, position;
 

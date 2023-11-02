@@ -26,6 +26,7 @@ public class Exercise8 {
         System.out.println("Average of the negative values of the array: " + negativesAverage);
     }
 
+    // Method that returns the sum of positive numbers
     public static int positivesSum(int[] array) {
         int sum = 0;
 
@@ -38,6 +39,7 @@ public class Exercise8 {
         return sum;
     }
 
+    // Method that returns the sum of negative numbers
     public static int negativesSum(int[] array) {
         int sum = 0;
 

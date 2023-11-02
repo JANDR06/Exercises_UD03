@@ -23,6 +23,7 @@ public class Exercise5 {
 
     }
 
+    // Method that fills the array with uppercase letters
     public static void fillArray(char[] array) {
         char caracter = 'A';
 
@@ -32,6 +33,7 @@ public class Exercise5 {
         }
     }
 
+    // Method that returns a word with the values of the array
     public static String returnString(char[] array, Scanner sc) {
         String word = "";
         int position;

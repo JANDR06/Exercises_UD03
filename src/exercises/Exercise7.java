@@ -23,6 +23,7 @@ public class Exercise7 {
         System.out.println("Number of zeros: " + zeros);
     }
 
+    // Method that returns the number of positive numbers
     public static int positivesQuantity(int[] array) {
         int positives = 0;
 
@@ -35,6 +36,7 @@ public class Exercise7 {
         return positives;
     }
 
+    // Method that returns the number of negative numbers
     public static int negativesQuantity(int[] array) {
         int negatives = 0;
 
@@ -47,6 +49,7 @@ public class Exercise7 {
         return negatives;
     }
 
+    // Method that returns the number of zeros numbers
     public static int zerosQuantity(int[] array) {
         int zeros = 0;
 
